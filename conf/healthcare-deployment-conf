@@ -1,0 +1,22 @@
+#set user parameters
+
+#SERVER
+SPARK_MASTER=spark://sr471:7180
+HDFS_MASTER=hdfs://sr471:54311
+DATA_PATH=/user/chunnan/healthcare_gen/
+ 
+
+##DATA CONF##
+nParts=256
+nFeatures=3000
+nRecords=5000000
+BlankItems=NAN,?, ,
+LostRatio=0.1
+
+##FILE NAME##
+Numerical=numberical.csv
+Categorical=categorical.csv
+
+##Algorithm parameter##
+TopK=10
+
